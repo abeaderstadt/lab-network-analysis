@@ -8,14 +8,13 @@ The goal of this analysis is not just to describe the data, but to identify patt
 You can view my interactive Tableau project here:
 https://public.tableau.com/views/Beaderstadt_LabNetworkAnalysis/Goal1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 ## Section 2. Data Description  
-Data Domain
+## Data Domain
 The dataset contains information about clinical laboratory testing performed across multiple facilities. It includes details about lab locations, facility types, test orders, turnaround times, test categories, and cost and reimbursement information.
-Data File
+## Data File
 The data comes from an Excel file named healthcare-lab-test-utilization.xlsx. This is a simulated lab operations dataset sourced from GoMask.ai, an AI-powered test data management platform that generates realistic, compliant healthcare data. The dataset contains 200 rows and 29 original columns.
 I created an additional calculated column, Turnaround Time (Days), by calculating the difference between the Test Order Date and the Test Completed Date.
 The following columns were present and clean upon obtaining the file:
 
- 
 -	utilization_id
 -	facility_id
 -	facility_name
@@ -46,9 +45,9 @@ The following columns were present and clean upon obtaining the file:
 -	diagnosis_code	
 -	diagnosis_description 
 
-Rows and Columns Used
+## Rows and Columns Used
 All 200 rows are used in this project. After adding the calculated turnaround time, the dataset contains 30 columns. Of these, 12 columns are actively used in the visualizations.
-Data Source
+## Data Source
 The dataset is a simulated lab operations dataset sourced from GoMask.ai. It represents lab testing activity across states, facility types, and test categories, and includes metrics related to turnaround time, testing volume, and financial performance.
 
 ## Section 3. Data Cleaning Strategies 
@@ -107,7 +106,8 @@ Story: Across all test types, reimbursement is higher than cost, so overall the 
 
 ## Dashboard Overview: Filters and Interactivity
 These dashboards allow filtering by state, facility type, and test type to explore the data interactively. Screenshots above show each goal-specific chart in a clean view for clarity.
-Purpose: Looking at these views together shows how lab locations and testing volume vary geographically. Filtering by state highlight’s location differences, while filtering by test type shows how tests are distributed across the lab network.
+
+*Purpose:* Looking at these views together shows how lab locations and testing volume vary geographically. Filtering by state highlight’s location differences, while filtering by test type shows how tests are distributed across the lab network.
 
 
 
@@ -123,9 +123,9 @@ Purpose: Looking at these views together shows how lab locations and testing vol
 
 
 
-Purpose: Looking at these views together shows how turnaround time relates to facility type and test volume. Filtering by facility type lets you focus on one type at a time, revealing trends over time and the relationship between volume and turnaround for that group.
+*Purpose:* Looking at these views together shows how turnaround time relates to facility type and test volume. Filtering by facility type lets you focus on one type at a time, revealing trends over time and the relationship between volume and turnaround for that group.
  
-Purpose: Looking at these views together shows how turnaround time and cost efficiency vary by test type. Some tests combine fast turnaround with smaller reimbursement gaps, while others take longer and show larger gaps. Together, these metrics highlight which tests could benefit most from operational or pricing improvements. Overall, these views give a comprehensive look at lab performance, efficiency, and cost-effectiveness across the network.
+*Purpose:* Looking at these views together shows how turnaround time and cost efficiency vary by test type. Some tests combine fast turnaround with smaller reimbursement gaps, while others take longer and show larger gaps. Together, these metrics highlight which tests could benefit most from operational or pricing improvements. Overall, these views give a comprehensive look at lab performance, efficiency, and cost-effectiveness across the network.
 
 
 
