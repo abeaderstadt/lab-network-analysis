@@ -16,35 +16,35 @@ I created an additional calculated column, Turnaround Time (Days), by calculatin
 The following columns were present and clean upon obtaining the file:
 
  
-•	utilization_id
-•	facility_id
-•	facility_name
-•	facility_type
-•	facility_street_address
-•	facility_city
-•	facility_state
-•	facility_postal_code
-•	facility_country
-•	test_order_id
-•	test_code
-•	test_name
-•	test_category
-•	test_order_date
-•	test_completed_date	
-•	ordering_physician_id	
-•	ordering_physician_name
-•	patient_id
-•	patient_age
-•	patient_gender
-•	test_result_value
-•	test_result_unit
-•	test_result_flag
-•	test_cost
-•	test_reimbursed_amount
-•	test_utilization_status
-•	test_duplicate_flag
-•	diagnosis_code	
-•	diagnosis_description 
+-	utilization_id
+-	facility_id
+-	facility_name
+-	facility_type
+-	facility_street_address
+-	facility_city
+-	facility_state
+-	facility_postal_code
+-	facility_country
+- test_order_id
+- test_code
+-	test_name
+-	test_category
+-	test_order_date
+-	test_completed_date	
+-	ordering_physician_id	
+-	ordering_physician_name
+-	patient_id
+-	patient_age
+-	patient_gender
+-	test_result_value
+-	test_result_unit
+-	test_result_flag
+-	test_cost
+-	test_reimbursed_amount
+-	test_utilization_status
+-	test_duplicate_flag
+-	diagnosis_code	
+-	diagnosis_description 
 
 Rows and Columns Used
 All 200 rows are used in this project. After adding the calculated turnaround time, the dataset contains 30 columns. Of these, 12 columns are actively used in the visualizations.
