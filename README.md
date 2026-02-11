@@ -1,11 +1,11 @@
 # Project Overview
 
-This project explores how a network of clinical laboratories performs across different locations, facility types, and test categories. Using a simulated lab operations dataset, I analyzed testing volume, turnaround times, and cost versus reimbursement to uncover patterns that could inform operational decisions. The visualizations highlight which labs run efficiently, which tests are most profitable, and where there’s room for improvement—all in an interactive, easy-to-explore format.
+This project explores how a network of clinical laboratories performs across different locations, facility types, and test categories. Using a simulated lab operations dataset, I analyzed testing volume, turnaround times, and cost versus reimbursement to uncover patterns that could inform operational decisions. The visualizations highlight which labs run efficiently, which tests are most profitable, and where there’s room for improvement.
 
-Explore the full analysis and interactive Tableau dashboards below. Screenshots and stories are included to highlight key takeaways, but you can also view the live project here: 
+Explore the full analysis and interactive Tableau dashboards below. Screenshots and stories are included to highlight key takeaways, but you can also view the hosted PDF report of the project here: https://github.com/abeaderstadt/lab-network-analysis/blob/main/AlissaBeaderstadt_LabNetwork.pdf
 
 
-
+---
 
 
 
