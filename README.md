@@ -66,7 +66,7 @@ The data is structured at the individual test order level, which allows for anal
 
 ## Section 5. Visualization Tools 
 Tableau was selected as the primary visualization tool because it supports interactive dashboards, geographic mapping, and clear comparisons across multiple dimensions such as location, facility type, and test category.
-Its filtering and storytelling features make it the best choice for exploring patterns and communicating insights in a way that is easy to follow.
+Its filtering and storytelling features made it the best choice for exploring patterns and communicating insights in a way that is easy to follow.
 
 
 ## Section 6. Visualizations and Stories
