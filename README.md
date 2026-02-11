@@ -75,7 +75,7 @@ The final dashboards and storyboards are published to GitHub and can be accessed
 ![Goal 2](images/Goal2.png)
  
 ### Goal 3: How does test volume by facility type relate to turnaround time?
-*Story:* Generally, higher test volumes come with slower turnaround times. That said, seven labs manage high volume while keeping turnaround fast showing they’ve got efficient processes in place. On the flip side, one low-volume lab is slower than average, which could be a spot to focus on for improvement. 
+*Story:* Generally, higher test volumes come with slower turnaround times. That said, seven facilities manage high volume while keeping turnaround fast  showing they’ve got efficient processes in place. On the flip side, two low-volume clinics are slower than average, which could be a spot to focus on for improvement.
 
 ![Goal 3](images/Goal3.png)
 
