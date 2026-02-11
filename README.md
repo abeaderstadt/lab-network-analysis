@@ -107,7 +107,7 @@ You can interact with the filters to explore results by state, facility type, or
 ## Dashboard Overview: Filters and Interactivity
 These dashboards allow filtering by state, facility type, and test type to explore the data interactively. Screenshots above show each goal-specific chart in a clean view for clarity.
 
-*Purpose:* Looking at these views together shows how lab locations and testing volume vary geographically. Filtering by state highlight’s location differences, while filtering by test type shows how tests are distributed across the lab network.
+*Purpose:* Looking at these views together shows how facility locations and testing volume vary geographically. Filtering by state highlight’s location differences, while filtering by test type shows how tests are distributed across the lab network.
 
 ![Dashboard 1](images/Dashboard1.png)
 
