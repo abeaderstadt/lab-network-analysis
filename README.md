@@ -3,18 +3,19 @@ Alissa Beaderstadt
 February 10, 2026
 
 ## Section 1. Introduction 
-Clinical laboratories sit at the center of healthcare operations, balancing speed, volume, and cost while supporting patient care. This project takes a closer look at how a lab network performs across different locations, facility types, and test categories. Using a simulated healthcare lab operations dataset, I explored where labs are located, how much testing they handle, how quickly results are turned around, and how costs compare to reimbursement.
-The goal of this analysis is not just to describe the data, but to identify patterns that could matter for operational decision-making. By combining geographic views, trend analysis, and cost comparisons in Tableau, this project highlights where labs appear to be operating efficiently and where there may be opportunities for improvement.
+Clinical laboratories play a huge role in healthcare operations. They have to balance speed, testing volume, and cost, all while supporting patient care. In this project, I took a closer look at how a lab network performs across different locations, facility types, and test categories.
+Using a simulated healthcare lab operations dataset, I explored where labs are located, how much testing they handle, how quickly results are completed, and how costs compare to reimbursement.
+The goal of this analysis was to identify patterns that could actually matter for operational decision making. By combining geographic views, trend analysis, and cost comparisons in Tableau, this project highlights where labs appear to be operating efficiently and where there may be room for improvement.
 You can view my interactive Tableau project here:
 https://public.tableau.com/views/Beaderstadt_LabNetworkAnalysis/Goal1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
 ## Section 2. Data Description  
 ## Data Domain
-The dataset contains information about clinical laboratory testing performed across multiple facilities. It includes details about lab locations, facility types, test orders, turnaround times, test categories, and cost and reimbursement information.
+This dataset contains information about clinical laboratory testing performed across multiple facilities. It includes lab locations, facility types, test orders, turnaround times, test categories, and financial metrics such as cost and reimbursement.
 ## Data File
-The data comes from an Excel file named healthcare-lab-test-utilization.xlsx. This is a simulated lab operations dataset sourced from GoMask.ai, an AI-powered test data management platform that generates realistic, compliant healthcare data. The dataset contains 200 rows and 29 original columns.
-I created an additional calculated column, Turnaround Time (Days), by calculating the difference between the Test Order Date and the Test Completed Date.
+The data comes from an Excel file named healthcare-lab-test-utilization.xlsx. It is a simulated lab operations dataset sourced from GoMask.ai, an AI-powered test data management platform that generates realistic, compliant healthcare data.
+The dataset contains 200 rows and 29 original columns. I created one additional calculated column, Turnaround Time (Days), by calculating the difference between the Test Order Date and the Test Completed Date.
 The following columns were present and clean upon obtaining the file:
-
 -	utilization_id
 -	facility_id
 -	facility_name
@@ -46,7 +47,7 @@ The following columns were present and clean upon obtaining the file:
 -	diagnosis_description 
 
 ## Rows and Columns Used
-All 200 rows are used in this project. After adding the calculated turnaround time, the dataset contains 30 columns. Of these, 12 columns are actively used in the visualizations.
+All 200 rows are included in this analysis. After adding the calculated turnaround time column, the dataset contains 30 columns total. Of these, 12 columns were actively used in the visualizations.
 ## Data Source
 The dataset is a simulated lab operations dataset sourced from GoMask.ai. It represents lab testing activity across states, facility types, and test categories, and includes metrics related to turnaround time, testing volume, and financial performance.
 
@@ -55,15 +56,22 @@ https://gomask.ai/marketplace/datasets/healthcare-lab-test-utilization
 
 
 ## Section 3. Data Cleaning Strategies 
-Only minor cleaning was required for this project. State values were updated from abbreviations to full state names to improve readability and consistency in geographic visualizations.
+Very little cleaning was required for this project. State values were updated from abbreviations to full state names to improve readability and consistency in the geographic visualization. Other than that, the dataset was already well structured and ready to use.
+
 ## Section 4. Clean Dataset 
-The clean dataset includes all original records with standardized state names and a calculated turnaround time column. The data is structured at the individual test order level, allowing analysis by facility, location, test type, and time. An excerpt of the dataset is included below to show the structure and key fields used for visualization.
+The clean dataset includes all original records, along with standardized state names and the calculated turnaround time column.
+The data is structured at the individual test order level, which allows for analysis by facility, location, test type, and date. 
+
 
 ## Section 5. Visualization Tools 
-Tableau was selected as the primary visualization tool for this project because it allows for interactive dashboards, geographic mapping, and easy comparison across multiple dimensions such as location, facility type, and test category. Tableau’s filtering and storytelling features make it well-suited for exploring operational patterns and communicating insights clearly.
-The final dashboards and storyboards are published to GitHub and can be accessed here:
+Tableau was selected as the primary visualization tool because it supports interactive dashboards, geographic mapping, and clear comparisons across multiple dimensions such as location, facility type, and test category.
+Its filtering and storytelling features make it the best choice for exploring patterns and communicating insights in a way that is easy to follow.
+
 
 ## Section 6. Visualizations and Stories
+This section presents dashboards and charts that explore lab performance across locations, facility types, and test categories.
+You can interact with the filters to explore results by state, facility type, or test type. Below, I’ve included screenshots and short explanations to highlight key takeaways. The full interactive Tableau workbook is available online if you would like to explore the data.
+
 ### Goal 1: Where are labs located, and how is testing activity distributed across states?
 *Story:* Facilities are spread across several U.S. states and two Canadian provinces. The states with the most facilities are California, Colorado, and Wyoming. Bigger circles represent more lab facilities, and darker blue shades show higher test volumes, which makes sense since more labs tend to process more tests.
 
@@ -114,8 +122,9 @@ These dashboards allow filtering by state, facility type, and test type to explo
 
 
 ### Section 7.  Conclusions 
-Lab performance varies across location, facility type, and test category. States with more labs process higher test volumes, though higher volume can mean slower turnaround. A few high-volume labs handle workloads efficiently, highlighting potential best practices.
-Turnaround time differs by test type: most tests finish within about a day, while specialized tests take longer. Financially, reimbursement exceeds cost for all tests, showing overall profitability. Tests with smaller reimbursement-cost gaps, like BMI, Red Blood Cell Count, and White Blood Cell Count, are relatively less cost-effective, while COVID-19 PCR shows the largest margins.
-These findings point to actionable opportunities: review workflows for slower labs, use fast, high-volume labs as benchmarks, and consider test-specific cost-effectiveness when making pricing or operational decisions. Overall, this analysis gives a clear picture of lab network performance and where targeted improvements could have the greatest impact.
+Lab performance clearly varies by location, facility type, and test category. States with more labs tend to process higher testing volumes, but higher volume does not always mean faster results. In fact, some high-volume labs experience slower turnaround times, while a few manage to handle large workloads efficiently. Those high-performing labs may offer useful benchmarks for best practices across the network.
+Turnaround time also depends heavily on test type. Most routine tests are completed within about a day, while more specialized tests take longer. From a financial perspective, reimbursement exceeds cost for all tests in this dataset, indicating overall profitability. However, not all tests are equally cost-effective. Tests such as BMI, Red Blood Cell Count, and White Blood Cell Count show smaller reimbursement-to-cost margins, while COVID-19 PCR demonstrates the largest financial margin.
+Overall, this analysis highlights several practical opportunities. Slower labs may benefit from workflow review, efficient high-volume labs can serve as performance models, and test-specific financial margins should be considered when evaluating pricing or operational strategies. Together, these insights provide a clearer picture of how the lab network is performing and where targeted improvements could make the greatest impact.
+
 
 # lab-network-analysis
