@@ -50,6 +50,10 @@ All 200 rows are used in this project. After adding the calculated turnaround ti
 ## Data Source
 The dataset is a simulated lab operations dataset sourced from GoMask.ai. It represents lab testing activity across states, facility types, and test categories, and includes metrics related to turnaround time, testing volume, and financial performance.
 
+You can view my data source here: 
+https://gomask.ai/marketplace/datasets/healthcare-lab-test-utilization
+
+
 ## Section 3. Data Cleaning Strategies 
 Only minor cleaning was required for this project. State values were updated from abbreviations to full state names to improve readability and consistency in geographic visualizations.
 ## Section 4. Clean Dataset 
