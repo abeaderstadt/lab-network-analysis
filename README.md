@@ -48,7 +48,7 @@ The following columns were present and clean upon obtaining the file:
 -	diagnosis_description 
 
 ## Rows and Columns Used
-All 200 rows are included in this analysis. After adding the calculated turnaround time column, the dataset contains 30 columns total. Of these, 12 columns were actively used in the visualizations.
+All 200 rows are included in this analysis. After adding the calculated turnaround time column, the dataset contained 30 columns total. Of these, 12 columns were actively used in the visualizations.
 ## Data Source
 The dataset is a simulated lab operations dataset sourced from GoMask.ai. It represents lab testing activity across states, facility types, and test categories, and includes metrics related to turnaround time, testing volume, and financial performance.
 
@@ -57,7 +57,7 @@ https://gomask.ai/marketplace/datasets/healthcare-lab-test-utilization
 
 
 ## Section 3. Data Cleaning Strategies 
-Very little cleaning was required for this project. State values were updated from abbreviations to full state names to improve readability and consistency in the geographic visualization. Other than that, the dataset was already well structured and ready to use.
+Very little cleaning was needed for this project. State values were updated from abbreviations to full state names to improve readability in the geographic visualization. Other than that, the dataset was already well structured and ready to use.
 
 ## Section 4. Clean Dataset 
 The clean dataset includes all original records, along with standardized state names and the calculated turnaround time column.
@@ -66,40 +66,40 @@ The data is structured at the individual test order level, which allows for anal
 
 ## Section 5. Visualization Tools 
 Tableau was selected as the primary visualization tool because it supports interactive dashboards, geographic mapping, and clear comparisons across multiple dimensions such as location, facility type, and test category.
-Its filtering and storytelling features made it the best choice for exploring patterns and communicating insights in a way that is easy to follow.
+Its filtering and storytelling features made it the best choice for exploring patterns in a way that is easy to follow.
 
 
 ## Section 6. Visualizations and Stories
 This section presents dashboards and charts that explore lab performance across locations, facility types, and test categories.
-You can interact with the filters to explore results by state, facility type, or test type. Below, I’ve included screenshots and short explanations to highlight key takeaways. The full interactive Tableau workbook is available online if you would like to explore the data.
+You can interact with the filters to explore results by state, facility type, or test type. Below, I’ve included screenshots and short stories to highlight key takeaways. The full interactive Tableau workbook is available online if you would like to explore the data.
 
 ### Goal 1: Where are labs located, and how is testing activity distributed across states?
-*Story:* Facilities are spread across several U.S. states and two Canadian provinces. The states with the most facilities are California, Colorado, and Wyoming. Bigger circles represent more lab facilities, and darker blue shades show higher test volumes, which makes sense since more labs tend to process more tests.
+*Story:* Labs are spread across multiple U.S. states and two Canadian provinces, but most testing happens in just a few hotspots. Not surprisingly, states with more facilities tend to see more tests. Colorado leads in total tests and has one of the highest numbers of facilities, along with California. Other states are more balanced, but Colorado’s darker shading hints that some labs there may act as regional hubs, handling bigger workloads.
 
 ![Goal 1](images/Goal1.png)
  
 ### Goal 2: How do average turnaround times differ by facility type, and how have they changed over time?
-*Story:* These values use a moving average to smooth out month-to-month ups and downs. Overall, laboratories have the highest average turnaround times throughout 2023, which is somewhat surprising given that labs are dedicated to test processing. This may reflect higher test volumes or more complex testing handled by labs. 
+*Story:* Average turnaround times over the year were smoothed to see trends clearly. Labs surprisingly have the longest averages, probably because they deal with higher volumes or more complex tests. Hospitals show steady improvement, while most other facility types spike slightly in September. This may be due to seasonal demand or staffing shifts. Overall, facility type clearly impacts efficiency, and some facilities are already improving over time. 
 
 ![Goal 2](images/Goal2.png)
  
 ### Goal 3: How does test volume by facility type relate to turnaround time?
-*Story:* Generally, higher test volumes come with slower turnaround times. That said, seven facilities manage high volume while keeping turnaround fast  showing they’ve got efficient processes in place. On the flip side, two low-volume clinics are slower than average, which could be a spot to focus on for improvement.
+*Story:* Higher test volumes generally slow turnaround a bit, but it’s not a strict rule. Seven facilities manage fast processing even with heavy workloads, showing that good workflows make a difference. On the low-volume side, three clinics struggle despite fewer tests, which proves that less demand doesn’t automatically mean faster results.
 
 ![Goal 3](images/Goal3.png)
 
 ### Goal 4: What percentage of total testing does each test type represent, and which tests are ordered most frequently?
-*Story:* BMI is the most commonly ordered test at 13.0%, with Cholesterol coming in second at 10.5%. Some other tests get ordered more often than others, but almost half of all testing is spread across a variety of types. No single test really dominates the labs’ workload. 
+*Story:* BMI tops the list at 13%, followed by Cholesterol at 10.5%. Beyond that, testing is pretty spread out, almost half of all tests are a mix of various types. No single test dominates, keeping the workload fairly diverse. 
 
 ![Goal 4](images/Goal4.png)
 
 ### Goal 5: How does turnaround time vary by test type, and which tests take longer?
-*Story:* Complete Blood Count takes the longest on average at 1.5 days. ALT, Vitamin D, and WBC Count are much faster, close to zero days. Most tests hover around a 1-day average, which is a good sign for overall lab performance. Microbiology tests tend to be a bit slower than the rest of the categories.
+*Story:* Most tests finish around one day, with Complete Blood Count taking the longest at about 1.5 days. ALT, Vitamin D, and WBC Count are quick, almost zero days. Chemistry tests dominate, with consistent turnaround times within the category, while microbiology tests are slightly slower, likely due to extra processing. Overall, differences are more about test complexity than odd outliers
 
 ![Goal 5](images/Goal5.png)
 
 ### Goal 6: How do test costs compare to reimbursed amounts, and which tests appear to be the least cost effective?
-*Story:* Across all test types, reimbursement is higher than cost, so overall the labs appear to be profitable. That said, not all tests perform the same. BMI, Red Blood Cell Count, and White Blood Cell Count have the smallest margins, making them the least cost-effective. On the other hand, COVID-19 PCR stands out as the most profitable test based on the size of its reimbursement gap.
+*Story:* Every test brings in more than it costs, so the lab network is profitable overall. Base costs stay under $35 per test, but some tests are more profitable than others. BMI, Red Blood Cell Count, and WBC Count have the smallest margins, while COVID-19 PCR and LDL cholesterol bring in the biggest gains. This could guide pricing or service focus.
 
 ![Goal 6](images/Goal6.png)
 
@@ -123,9 +123,7 @@ These dashboards allow filtering by state, facility type, and test type to explo
 
 
 ### Section 7.  Conclusions 
-Lab performance clearly varies by location, facility type, and test category. States with more labs tend to process higher testing volumes, but higher volume does not always mean faster results. In fact, some high-volume labs experience slower turnaround times, while a few manage to handle large workloads efficiently. Those high-performing labs may offer useful benchmarks for best practices across the network.
-Turnaround time also depends heavily on test type. Most routine tests are completed within about a day, while more specialized tests take longer. From a financial perspective, reimbursement exceeds cost for all tests in this dataset, indicating overall profitability. However, not all tests are equally cost-effective. Tests such as BMI, Red Blood Cell Count, and White Blood Cell Count show smaller reimbursement-to-cost margins, while COVID-19 PCR demonstrates the largest financial margin.
-Overall, this analysis highlights several practical opportunities. Slower labs may benefit from workflow review, efficient high-volume labs can serve as performance models, and test-specific financial margins should be considered when evaluating pricing or operational strategies. Together, these insights provide a clearer picture of how the lab network is performing and where targeted improvements could make the greatest impact.
+Lab performance isn’t one-size-fits-all, it changes by location, facility type, and the tests themselves. Some states handle a ton of tests, but high volume doesn’t always mean fast results. A few facilities manage big workloads efficiently, and these could be great examples for others to follow.
+Turnaround times mostly depend on the type of test. Routine ones usually finish in about a day, while tests like Complete Blood Count take longer. Financially, every test makes money, but some are more profitable than others. BMI, Red Blood Cell Count, and WBC Count bring in smaller margins, while COVID-19 PCR and LDL cholesterol are real winners.
+So, what does this mean for the network? Focus on helping slower, high-volume labs speed up and streamline longer tests. At the same time, leaning into those high-margin tests and finding ways to reduce costs on the lower-margin ones could give a nice boost to overall profits. By learning from the labs that are already crushing it and tweaking operations and test mix, the network could get faster results and stronger performance across the board.
 
-
-# lab-network-analysis
