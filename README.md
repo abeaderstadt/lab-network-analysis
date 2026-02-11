@@ -6,7 +6,9 @@ February 10, 2026
 Clinical laboratories play a huge role in healthcare operations. They have to balance speed, testing volume, and cost, all while supporting patient care. In this project, I took a closer look at how a lab network performs across different locations, facility types, and test categories.
 Using a simulated healthcare lab operations dataset, I explored where labs are located, how much testing they handle, how quickly results are completed, and how costs compare to reimbursement.
 The goal of this analysis was to identify patterns that could actually matter for operational decision making. By combining geographic views, trend analysis, and cost comparisons in Tableau, this project highlights where labs appear to be operating efficiently and where there may be room for improvement.
+
 You can view my interactive Tableau project here:
+
 https://public.tableau.com/views/Beaderstadt_LabNetworkAnalysis/Goal1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ## Section 2. Data Description  
