@@ -8,7 +8,6 @@ Using a simulated healthcare lab operations dataset, I explored where labs are l
 The goal of this analysis was to identify patterns that could actually matter for operational decision making. By combining geographic views, trend analysis, and cost comparisons in Tableau, this project highlights where labs appear to be operating efficiently and where there may be room for improvement.
 
 You can view my interactive Tableau project here:
-
 https://public.tableau.com/views/Beaderstadt_LabNetworkAnalysis/Goal1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ## Section 2. Data Description  
