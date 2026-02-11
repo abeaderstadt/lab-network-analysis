@@ -67,32 +67,32 @@ The final dashboards and storyboards are published to GitHub and can be accessed
 ### Goal 1: Where are labs located, and how is testing activity distributed across states?
 *Story:* Facilities are spread across several U.S. states and two Canadian provinces. The states with the most facilities are California, Colorado, and Wyoming. Bigger circles represent more lab facilities, and darker blue shades show higher test volumes, which makes sense since more labs tend to process more tests.
 
-![Goal 1](Goal1.png)
+![Goal 1](images/Goal1.png)
  
 ### Goal 2: How do average turnaround times differ by facility type, and how have they changed over time?
 *Story:* These values use a moving average to smooth out month-to-month ups and downs. Overall, laboratories have the highest average turnaround times throughout 2023, which is somewhat surprising given that labs are dedicated to test processing. This may reflect higher test volumes or more complex testing handled by labs. 
 
-![Goal 2](Goal2.png)
+![Goal 2](images/Goal2.png)
  
 ### Goal 3: How does test volume by facility type relate to turnaround time?
 *Story:* Generally, higher test volumes come with slower turnaround times. That said, seven labs manage high volume while keeping turnaround fast showing they’ve got efficient processes in place. On the flip side, one low-volume lab is slower than average, which could be a spot to focus on for improvement. 
 
-![Goal 3](Goal3.png)
+![Goal 3](images/Goal3.png)
 
 ### Goal 4: What percentage of total testing does each test type represent, and which tests are ordered most frequently?
 *Story:* BMI is the most commonly ordered test at 13.0%, with Cholesterol coming in second at 10.5%. Some other tests get ordered more often than others, but almost half of all testing is spread across a variety of types. No single test really dominates the labs’ workload. 
 
-![Goal 4](Goal4.png)
+![Goal 4](images/Goal4.png)
 
 ### Goal 5: How does turnaround time vary by test type, and which tests take longer?
 *Story:* Complete Blood Count takes the longest on average at 1.5 days. ALT, Vitamin D, and WBC Count are much faster, close to zero days. Most tests hover around a 1-day average, which is a good sign for overall lab performance. Microbiology tests tend to be a bit slower than the rest of the categories.
 
-![Goal 5](Goal5.png)
+![Goal 5](images/Goal5.png)
 
 ### Goal 6: How do test costs compare to reimbursed amounts, and which tests appear to be the least cost effective?
 *Story:* Across all test types, reimbursement is higher than cost, so overall the labs appear to be profitable. That said, not all tests perform the same. BMI, Red Blood Cell Count, and White Blood Cell Count have the smallest margins, making them the least cost-effective. On the other hand, COVID-19 PCR stands out as the most profitable test based on the size of its reimbursement gap.
 
-![Goal 6](Goal6.png)
+![Goal 6](images/Goal6.png)
 
 
 ## Dashboard Overview: Filters and Interactivity
@@ -100,17 +100,17 @@ These dashboards allow filtering by state, facility type, and test type to explo
 
 *Purpose:* Looking at these views together shows how lab locations and testing volume vary geographically. Filtering by state highlight’s location differences, while filtering by test type shows how tests are distributed across the lab network.
 
-![Dashboard 1](Dashboard1.png)
+![Dashboard 1](images/Dashboard1.png)
 
 
 
 *Purpose:* Looking at these views together shows how turnaround time relates to facility type and test volume. Filtering by facility type lets you focus on one type at a time, revealing trends over time and the relationship between volume and turnaround for that group.
 
- ![Dashboard 2](Dashboard2.png)
+ ![Dashboard 2](images/Dashboard2.png)
  
 *Purpose:* Looking at these views together shows how turnaround time and cost efficiency vary by test type. Some tests combine fast turnaround with smaller reimbursement gaps, while others take longer and show larger gaps. Together, these metrics highlight which tests could benefit most from operational or pricing improvements. Overall, these views give a comprehensive look at lab performance, efficiency, and cost-effectiveness across the network.
 
-![Dashboard 3](Dashboard3.png)
+![Dashboard 3](images/Dashboard3.png)
 
 
 ### Section 7.  Conclusions 
