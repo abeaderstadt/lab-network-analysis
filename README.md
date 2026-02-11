@@ -83,20 +83,20 @@ The final dashboards and storyboards are published to GitHub and can be accessed
 
 ## Section 6. Visualizations and Stories
 ### Goal 1: Where are labs located, and how is testing activity distributed across states?
-Story: Facilities are spread across several U.S. states and two Canadian provinces. The states with the most facilities are California, Colorado, and Wyoming. Bigger circles represent more lab facilities, and darker blue shades show higher test volumes, which makes sense since more labs tend to process more tests.
+*Story:* Facilities are spread across several U.S. states and two Canadian provinces. The states with the most facilities are California, Colorado, and Wyoming. Bigger circles represent more lab facilities, and darker blue shades show higher test volumes, which makes sense since more labs tend to process more tests.
  
 ### Goal 2: How do average turnaround times differ by facility type, and how have they changed over time?
-Story: These values use a moving average to smooth out month-to-month ups and downs. Overall, laboratories have the highest average turnaround times throughout 2023, which is somewhat surprising given that labs are dedicated to test processing. This may reflect higher test volumes or more complex testing handled by labs. 
+*Story:* These values use a moving average to smooth out month-to-month ups and downs. Overall, laboratories have the highest average turnaround times throughout 2023, which is somewhat surprising given that labs are dedicated to test processing. This may reflect higher test volumes or more complex testing handled by labs. 
  
 ### Goal 3: How does test volume by facility type relate to turnaround time?
-Story: Generally, higher test volumes come with slower turnaround times. That said, seven labs manage high volume while keeping turnaround fast showing they’ve got efficient processes in place. On the flip side, one low-volume lab is slower than average, which could be a spot to focus on for improvement. 
+*Story:* Generally, higher test volumes come with slower turnaround times. That said, seven labs manage high volume while keeping turnaround fast showing they’ve got efficient processes in place. On the flip side, one low-volume lab is slower than average, which could be a spot to focus on for improvement. 
 ### Goal 4: What percentage of total testing does each test type represent, and which tests are ordered most frequently?
-Story: BMI is the most commonly ordered test at 13.0%, with Cholesterol coming in second at 10.5%. Some other tests get ordered more often than others, but almost half of all testing is spread across a variety of types. No single test really dominates the labs’ workload. 
+*Story:* BMI is the most commonly ordered test at 13.0%, with Cholesterol coming in second at 10.5%. Some other tests get ordered more often than others, but almost half of all testing is spread across a variety of types. No single test really dominates the labs’ workload. 
 ### Goal 5: How does turnaround time vary by test type, and which tests take longer?
-Story: Complete Blood Count takes the longest on average at 1.5 days. ALT, Vitamin D, and WBC Count are much faster, close to zero days. Most tests hover around a 1-day average, which is a good sign for overall lab performance. Microbiology tests tend to be a bit slower than the rest of the categories.
+*Story:* Complete Blood Count takes the longest on average at 1.5 days. ALT, Vitamin D, and WBC Count are much faster, close to zero days. Most tests hover around a 1-day average, which is a good sign for overall lab performance. Microbiology tests tend to be a bit slower than the rest of the categories.
 
 ### Goal 6: How do test costs compare to reimbursed amounts, and which tests appear to be the least cost effective?
-Story: Across all test types, reimbursement is higher than cost, so overall the labs appear to be profitable. That said, not all tests perform the same. BMI, Red Blood Cell Count, and White Blood Cell Count have the smallest margins, making them the least cost-effective. On the other hand, COVID-19 PCR stands out as the most profitable test based on the size of its reimbursement gap.
+*Story:* Across all test types, reimbursement is higher than cost, so overall the labs appear to be profitable. That said, not all tests perform the same. BMI, Red Blood Cell Count, and White Blood Cell Count have the smallest margins, making them the least cost-effective. On the other hand, COVID-19 PCR stands out as the most profitable test based on the size of its reimbursement gap.
 
 
 
